@@ -23,3 +23,5 @@
   **Type Annotations: (For Functions)** Code that we write to tell TS what type of arguments a function will receive and what is its return value type.
 
   **Type Inference: (For Functions)** TS tries to figure out what type of value a function will return.
+
+  * type `never` is used when we are 100% sure that we will not return anything from a function, like a function that is only throwing an error.
