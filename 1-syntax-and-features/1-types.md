@@ -16,4 +16,10 @@
 
   **Type Annotations:** Code that we write to tell TS what type of value a variable has.
 
-  **Type Inference:** TS tries to figure out out what type of value a variable refers to. This works if we declare (`const variable`) and the initialization(` = 'string'`) on the same step
+  **Type Inference:** TS tries to figure out what type of value a variable refers to. This works if we declare (`const variable`) and the initialization(` = 'string'`) on the same step
+
+  * try to avoid the `any` type at all costs. it means TS does not know the type and cannot perform any type checking on this variable.
+
+  **Type Annotations: (For Functions)** Code that we write to tell TS what type of arguments a function will receive and what is its return value type.
+
+  **Type Inference: (For Functions)** TS tries to figure out what type of value a function will return.
