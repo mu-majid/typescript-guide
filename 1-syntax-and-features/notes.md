@@ -25,3 +25,9 @@
   **Type Inference: (For Functions)** TS tries to figure out what type of value a function will return.
 
   * type `never` is used when we are 100% sure that we will not return anything from a function, like a function that is only throwing an error.
+
+### Tuple:
+
+  * It is like an array but the order of the elements is important, and it basically represents properties about a record.
+  * In TS we can define a tuple like this: `const variable: [boolean, number] = [true, 100]`.
+  * Most of the time tuples are not the best type to represent data types.
