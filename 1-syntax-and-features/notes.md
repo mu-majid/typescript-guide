@@ -31,3 +31,8 @@
   * It is like an array but the order of the elements is important, and it basically represents properties about a record.
   * In TS we can define a tuple like this: `const variable: [boolean, number] = [true, 100]`.
   * Most of the time tuples are not the best type to represent data types.
+
+### Interfaces:
+
+  * The main usage of interfaces is to create a new type and define the property name and value types of an object.
+  * TS will iterate through an object and make sure it has all the properties that are in the interface.
