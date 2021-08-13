@@ -26,6 +26,8 @@
 
   * type `never` is used when we are 100% sure that we will not return anything from a function, like a function that is only throwing an error.
 
+  * When we use the `|` to indicate a type like this `arg: typeOne | typeTwo` arg will only have access to common properties on both types.
+
 ### Tuple:
 
   * It is like an array but the order of the elements is important, and it basically represents properties about a record.
