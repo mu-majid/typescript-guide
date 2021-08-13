@@ -1,2 +1,5 @@
 package-lock.json
+dist
+.DS_Store
+.cache
 node_modules
