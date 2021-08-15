@@ -28,6 +28,8 @@
 
   * When we use the `|` to indicate a type like this `arg: typeOne | typeTwo` arg will only have access to common properties on both types.
 
+  * union-ing two types like the note above is always associated with a Type-Guard approach in the code (when you check for the variable type using typeof and instanceof to act accordingly), this pattern is not good as it means every time we want to hadle a new type, we will add it to the union `typeOne | typeTwo | ...` and then in the code add a new `if(var instanceof typeThree)` with the handling for that type inside the if statement.
+
 ### Tuple:
 
   * It is like an array but the order of the elements is important, and it basically represents properties about a record.
