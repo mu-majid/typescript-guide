@@ -67,6 +67,8 @@ export class LinkedList extends Sorter {
     return this.at(leftIndex).data > this.at(rightIndex).data;
   }
 
+  // This is a hack, Linked list swapping should change node pointers
+  // but here I just swap values of the nodes themselves
   swap(leftIndex: number, rightIndex: number): void {
     const leftNode = this.at(leftIndex);
     const rightNode = this.at(rightIndex);
