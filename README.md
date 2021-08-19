@@ -16,4 +16,6 @@
 
   ### 4-stats:
   * The stats directory is a project that reads football.csv file containing football matches results and analyze these data, then generate a report for it. In this project code-reuse is done via two way (CSVReader and MatchReader Entites) -> First one is through inheritance and abstract classes, and the other is via composition and interfaces.
+  * Generics are introduced in this projects
+  ![generics](./img/generic.png)
   
