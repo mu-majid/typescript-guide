@@ -6,5 +6,5 @@
   * The sort directory contains code for a simple sorter that takes array, string, or a linked list and sorts it. Also in this project reusability is in mind and how to write generic code. The main idea from this project is that we need to apply the same set of steps/instructions (bubble sorting) on different data structures (number[], string, linkedList). Interfaces are important here.
   * Interfaces and Abstract Classes differences: *Always try to stick to interfaces when possible*
   ![interface-vs-abstract-class](./img/inter-vs-abst.png)
-  * The stats directory is a project that reads football.csv file containing football matches results and analyze these data, then generate a report for it.
+  * The stats directory is a project that reads football.csv file containing football matches results and analyze these data, then generate a report for it. In this project code-reuse is done via two way (CSVReader and MatchReader Entites) -> First one is through inheritance and abstract classes, and the other is via composition and interfaces.
   
