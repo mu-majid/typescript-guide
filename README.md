@@ -18,4 +18,7 @@
   * The stats directory is a project that reads football.csv file containing football matches results and analyze these data, then generate a report for it. In this project code-reuse is done via two way (CSVReader and MatchReader Entites) -> First one is through inheritance and abstract classes, and the other is via composition and interfaces.
   * Generics are introduced in this projects
   ![generics](./img/generic.png)
+  * this project has two implementation for the CSV and Match Reader -> Inheritance and compoaition.
+  * *Favor object comppsition over class inheritance* is the most misundertood statement in the javascript comunity. In this statement, composition means using interfaces and the `has a` relation between objects insead of the `is a` relation between classes. This usually done via delegation.
+  * In javascript, people normally refer to object composition as uing Object.assign for example. Which is basically inheritance.
   
