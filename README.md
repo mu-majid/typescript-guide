@@ -21,4 +21,13 @@
   * this project has two implementation for the CSV and Match Reader -> Inheritance and compoaition.
   * *Favor object comppsition over class inheritance* is the most misundertood statement in the javascript comunity. In this statement, composition means using interfaces and the `has a` relation between objects insead of the `is a` relation between classes. This usually done via delegation.
   * In javascript, people normally refer to object composition as uing Object.assign for example. Which is basically inheritance.
+
+  ### 5-web:
+  * This project is a front-end web framework (like React) that has basic features (like handling events, rendering content, and saving/retrieving data) that will help you build front-end components. The project basically has two main folders, Models and Views. Models is for fetching, saving, and interacting with data. And Views is about what is shown on the browser to the user.
+  * In this project I used `Extraction Approach` which means, Build a mega class (with tons of functionality) representing an Entity -> Then refactor that Entity class using composition -> Then Refactor The Entity class to be reusable class and represent any piece of data, not just a specific Entity.
+  * The Entity was a User class that had three main functionalities: 
+  1) Ability to save/retrieve user data on a remote server.
+  2) Listen to events on a user instance, and trigger event handlers associated with these events.
+  3) Create a user with feeding the class some Attributes
+  * These three functionalities were extracted into three separate classes, and interated into User class via composition, so that, when any functionality is needed -> delegation to the responsible class occurs.
   
