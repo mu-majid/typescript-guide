@@ -30,4 +30,7 @@
   2) Listen to events on a user instance, and trigger event handlers associated with these events.
   3) Create a user with feeding the class some Attributes
   * These three functionalities were extracted into three separate classes, and interated into User class via composition, so that, when any functionality is needed -> delegation to the responsible class occurs.
+
+  * Two important facts: 1) in TS, strings can be types. 2) In JS( and therefore TS ), all object keys are strings. - This tells us that object keys in TS can be types.
+  * The above statement justifies syntaxes like <k extends keyof T> in TS (Where T is the type and k is a key on on type T).
   
