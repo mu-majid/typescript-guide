@@ -33,4 +33,8 @@
 
   * Two important facts: 1) in TS, strings can be types. 2) In JS( and therefore TS ), all object keys are strings. - This tells us that object keys in TS can be types.
   * The above statement justifies syntaxes like <k extends keyof T> in TS (Where T is the type and k is a key on on type T).
-  * The last step in this project was to make User class more generic  and to represent any Entity instead of just a user
+  * The last step in this project was to make User class more generic  and to represent any Entity instead of just a user.
+  * Model class was introduced to represent this generic class that all entities should rely on and build on it.
+  * Using Inheritance between User and Model is the right decision to make here, because with Composition/interfaces we end up having one of two issues:
+    1. Allow access to Model instance on the User class to outer world -> code like this would be used `user.model.get()`.
+    2. Implement all methods in Model again on User as a passthrough methods. (just invoking the methods on model).
