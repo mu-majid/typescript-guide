@@ -38,3 +38,23 @@
   * Using Inheritance between User and Model is the right decision to make here, because with Composition/interfaces we end up having one of two issues:
     1. Allow access to Model instance on the User class to outer world -> code like this would be used `user.model.get()`.
     2. Implement all methods in Model again on User as a passthrough methods. (just invoking the methods on model).
+
+  * Any assignment in the constructor happens after all assignments in class are done, for example:
+  ```javascript
+
+  class Engine {
+    start () {
+      console.log('started');
+    }
+  }
+
+  class Car {
+    engine: Engine;
+    
+    constructor() {
+      this.engine = new Engine(); // This is executed secondly  <---- 2
+    }
+
+    start = this.engine.start; // -> This is executed first  <--- 1 
+  }
+  ```
