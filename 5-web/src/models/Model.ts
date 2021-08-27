@@ -27,6 +27,8 @@ export class Model<T extends HasId> {
     private sync: Sync<T>
   ) {}
 
+  // This only works because the way we intialize Model class properties(attributes, events, sync) in the constructor.
+  // If we choose to initialize them inside the constructor, this will break and we should revert to accessor method
   on = this.events.on;
   trigger = this.events.trigger;
   get = this.attributes.get;
