@@ -23,6 +23,8 @@ export abstract class View<T extends Model<K>, K> {
     });
   }
 
+  // DocumentFragment is representation of HTML in memory before it is inserted into DOM,
+  // that's where we bind events.
   bindEvents(fragment: DocumentFragment): void {
     const eventsMap = this.eventsMap();
 
