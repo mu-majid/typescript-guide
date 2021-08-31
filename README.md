@@ -23,6 +23,7 @@
   * In javascript, people normally refer to object composition as uing Object.assign for example. Which is basically inheritance.
 
   ### 5-web:
+  * Based on ideas from Backbone.js and Marionette.js frameworks (frameworks that replcaed by React,vue,angular)
   * This project is a front-end web framework (like React) that has basic features (like handling events, rendering content, and saving/retrieving data) that will help you build front-end components. The project basically has two main folders, Models and Views. Models is for fetching, saving, and interacting with data. And Views is about what is shown on the browser to the user.
   * In this project I used `Extraction Approach` which means, Build a mega class (with tons of functionality) representing an Entity -> Then refactor that Entity class using composition -> Then Refactor The Entity class to be reusable class and represent any piece of data, not just a specific Entity.
   * The Entity was a User class that had three main functionalities: 
