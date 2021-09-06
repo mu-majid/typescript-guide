@@ -49,6 +49,7 @@
     }
   }
 
+
   class Car {
     engine: Engine;
 
@@ -61,4 +62,3 @@
   ```
   * Views directory holds all classes that represent the Enitities we want to show on the screen. Coupling between a view class and a model class is inevitable, and also events will kick in when we want to change something in the html and reflect changes in the data side (models)
 
-  
