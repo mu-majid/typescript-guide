@@ -2,6 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import { Eventing } from './Eventing';
 
 export class Collection<T, K> {
+  
   models: T[] = [];
   events: Eventing = new Eventing();
 
