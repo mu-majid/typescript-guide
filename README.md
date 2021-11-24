@@ -60,3 +60,10 @@
   }
   ```
   * Views directory holds all classes that represent the Enitities we want to show on the screen. Coupling between a view class and a model class is inevitable, and also events will kick in when we want to change something in the html and reflect changes in the data side (models)
+
+  ### 6-express-ts:
+
+  * in this project express is intergarted with TS.
+  * metadata is used, this metadata is an experimental feature that allows us to hold info about a method, property or a class definition.
+  * To preserve types after transpilation from TS to JS, metadata is used (reflect-metadata).
+  * We integrate TS with express by utilising classes and decorators, to have a very elegant code.
